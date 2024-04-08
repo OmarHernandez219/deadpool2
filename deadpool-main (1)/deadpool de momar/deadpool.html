@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+        body,html{
+
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+
+
+        }
+
+
+        .dedpool {
+            position: relative;
+            width: 80%;
+            height: 100%;
+            background:url('deadpool.jpeg') no-repeat center center/cover ;
+            opacity: 50%;
+            left: 80px;
+            top: 50px;
+        }
+
+        .texto-presentacion{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgb(9, 9, 9);
+            text-align: center;
+        }
+        .circulo{
+
+        }
+
+        .cuadrado{
+
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            position: absolute;
+
+        }
+
+        .ojos{ 
+
+            display: block;
+            width: 60px;
+            height: 110px;
+            background-color: black;
+            border-radius: 50% 50% 50% 50% / 60% 60% 60% 60%;
+            position: relative;
+        }
+
+        .triangulo-normal {
+
+            width: 0;
+            height: 0;
+            border-top: 40px solid transparent;
+            border-right: 40px solid transparent;
+            border-bottom: 40px solid black;
+
+        }
+
+        .trianguloizquierdo {
+
+            width: 0;
+            height: 0;
+            border-top: 40px solid transparent;
+            border-right: 40px solid black;
+            border-bottom: 40px solid transparent;
+
+
+
+        }
+
+        .eclipse{ 
+
+            width: 150px;
+            height: 150px;
+            background-color: black;
+            border: 2px solid white;
+            -moz-border-radius: 0 100px 100px 0;
+            -webkit-border-radius:0 100px 100px 0 ;
+            border-radius: 0 100px 100px 0;
+
+        }
+    </style>
+
+    <div class="dedpool">
+        <div class="texto-presentacion">
+            <h1>Mi primer dibujo en CCS</h1>
+            <h2>Diseño por: Omar Hernandez</h2>
+            <p>De la especialidad de programacion de 4 semestre de la escuela Cetis 131</p>
+        </div>
+    </div>
+
+    <div class="cuadrado" style="left: 140px; top: 70px; border-radius: 50%;"></div>
+    <div class="cuadrado" style="width: 150px;height: 150px;left: 166px; top: 240px; border-radius: 45%;"></div>
+    <div class="ojos" style="top: -580px; left: 250px;"></div>
+    <div class="ojos" style="top: -690px; left: 170px;"></div>
+    <div class="cuadrado" style="height: 20px; width: 20px; left: 190px; top: 170px; border-radius: 50%; background-color: white; "></div>
+    <div class="cuadrado" style="height:  20px; width: 20px; left: 260px; top: 170px; border-radius: 50%; background-color: white;"></div>
+    <div class="eclipse"></div>
+
+
+</body>
+</html>
